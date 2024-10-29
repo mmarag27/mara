@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Dancing Script", cursive;
+}
+header{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    max-height: 250px;
+    background-image: url('../img/cards-8594729_1280.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header h1{
+    color: #fff;
+    font-size: 50px; 
+}
+.datos{
+    background-color: aqua;
+}
+.datos > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.datos img{
+    width: 20px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.datos a{
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.datos a:hover{
+    color: blue;
+    transition: 0.3s ease-in;
+}
+#contenido{
+    display: flex;
+    padding: 50px;
+    background-color: blanchedalmond;
+    padding: 20px;
+}
+.img-circular{
+    border-radius: 50%;
+}
+.persona h2, .experiencia h2, .habilidas h2{
+    font-size: 16px;
+    text-align: left;
+    border-bottom: #000 2px solid;
+}
+.persona p{
+    text-align: justify;
+    margin-top: 15px;
+}
+.iconos {
+    list-style: none;
+    text-align: left;
+    margin-top: 20px;
+}
+.iconos img{
+    width: 20px;
+    display: inline-block;
+    margin-right: 15px;
+}
+.iconos a{
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.iconos a:hover{
+    color:blue;
+    transition: 0.3s ease-in;
+}
+.cursos{
+    margin-top: 30px;
+}
+.cursos ul{
+    padding: 20px;
+    text-align: justify;
+}
+.experiencia, .habilidades{
+    padding: 10px;
+}
+.experiencia ul{
+    padding: 20px;
+}
+.educacion p{
+    margin-top: 15px;
+}
+.habilidades ul{
+    padding: 20px;
+    list-style: none;
+}
+.circle{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:480px){
+    .datos > ul{
+        flex-direction: column;
+    }
+    #contenido{
+        flex-direction: column;
+    }
+}
+    
